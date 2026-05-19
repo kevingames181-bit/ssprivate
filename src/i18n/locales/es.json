@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "map": "Mapa",
+    "trends": "Tendencias",
+    "pricing": "Precios",
+    "company": "Empresa",
+    "contact": "Contacto",
+    "faq": "Preguntas",
+    "login": "Iniciar Sesión",
+    "signup": "Registrarse",
+    "logout": "Cerrar Sesión",
+    "dashboard": "Panel"
+  },
+  "hero": {
+    "badge": "Inteligencia Pesquera Premier de Alaska",
+    "title": "Inteligencia Pesquera en Tiempo Real para",
+    "titleHighlight": "Aguas de Alaska",
+    "subtitle": "Tome decisiones informadas con datos en vivo de ADF&G, información impulsada por IA y análisis integral para la industria pesquera de Alaska.",
+    "ctaPrimary": "Prueba Gratuita",
+    "ctaSecondary": "Ver Mapa en Vivo",
+    "stats": {
+      "districts": "Distritos Pesqueros",
+      "users": "Usuarios Activos",
+      "updates": "Actualizaciones en Vivo"
+    }
+  },
+  "features": {
+    "title": "Todo lo que Necesitas",
+    "subtitle": "Herramientas poderosas diseñadas para la industria pesquera de Alaska",
+    "realtime": {
+      "title": "Datos ADF&G en Tiempo Real",
+      "description": "Acceda a aperturas, cierres y regulaciones pesqueras en vivo directamente del Departamento de Pesca y Caza de Alaska."
+    },
+    "ai": {
+      "title": "Información Impulsada por IA",
+      "description": "Los algoritmos de aprendizaje automático analizan patrones históricos para predecir ventanas de pesca óptimas y potencial de captura."
+    },
+    "map": {
+      "title": "Mapas Interactivos",
+      "description": "Visualice distritos pesqueros, patrones climáticos, predicciones de mareas y ubicaciones de embarcaciones en mapas detallados de Alaska."
+    },
+    "analytics": {
+      "title": "Análisis Avanzado",
+      "description": "Rastree tendencias de captura, compare datos históricos y genere informes completos para su operación."
+    },
+    "mobile": {
+      "title": "Acceso Móvil",
+      "description": "Manténgase conectado en el agua con nuestra plataforma optimizada para móviles. Acceda a datos críticos desde cualquier dispositivo."
+    },
+    "alerts": {
+      "title": "Alertas Inteligentes",
+      "description": "Reciba notificaciones instantáneas sobre aperturas pesqueras, cambios climáticos y actualizaciones regulatorias importantes."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Bienvenido de Nuevo",
+      "subtitle": "Inicie sesión para acceder a su panel de inteligencia pesquera",
+      "badge": "Inicio de Sesión Seguro",
+      "email": "Correo Electrónico",
+      "password": "Contraseña",
+      "forgot": "¿Olvidó?",
+      "submit": "Iniciar Sesión",
+      "submitting": "Iniciando Sesión...",
+      "google": "Google",
+      "divider": "O continuar con",
+      "noAccount": "¿No tiene una cuenta?",
+      "createAccount": "Crear una ahora"
+    },
+    "signup": {
+      "title": "Crear Cuenta",
+      "subtitle": "Únase a la plataforma de inteligencia pesquera premier de Alaska",
+      "badge": "Prueba Gratuita",
+      "name": "Nombre Completo",
+      "email": "Correo Electrónico",
+      "password": "Contraseña",
+      "confirmPassword": "Confirmar Contraseña",
+      "submit": "Crear Cuenta",
+      "submitting": "Creando Cuenta...",
+      "google": "Google",
+      "divider": "O continuar con",
+      "haveAccount": "¿Ya tiene una cuenta?",
+      "signIn": "Iniciar sesión"
+    },
+    "forgot": {
+      "title": "Olvidé mi Contraseña",
+      "subtitle": "Ingrese su correo electrónico y le enviaremos un enlace de restablecimiento",
+      "badge": "Restablecer Contraseña",
+      "email": "Correo Electrónico",
+      "submit": "Enviar Enlace",
+      "submitting": "Enviando...",
+      "success": {
+        "title": "Revise su Correo",
+        "subtitle": "Hemos enviado un enlace de restablecimiento de contraseña a",
+        "badge": "Correo Enviado",
+        "message": "Haga clic en el enlace del correo para restablecer su contraseña."
+      },
+      "remember": "¿Recuerda su contraseña?",
+      "noAccount": "¿No tiene una cuenta?",
+      "createAccount": "Crear una"
+    }
+  },
+  "company": {
+    "badge": "Desde 2024 • Con Base en Alaska • Líderes de la Industria",
+    "title": "Empoderando la Industria Pesquera de Alaska",
+    "subtitle": "Estamos construyendo el futuro de la inteligencia pesquera con datos en tiempo real, información impulsada por IA y un profundo compromiso con la comunidad pesquera de Alaska."
+  },
+  "footer": {
+    "tagline": "Plataforma de Inteligencia Pesquera Premier de Alaska",
+    "description": "Datos en tiempo real, información impulsada por IA y análisis integral para la industria pesquera de Alaska.",
+    "product": "Producto",
+    "company": "Empresa",
+    "support": "Soporte",
+    "legal": "Legal",
+    "terms": "Términos de Servicio",
+    "privacy": "Política de Privacidad",
+    "cookies": "Política de Cookies",
+    "rights": "Todos los derechos reservados.",
+    "language": "Idioma"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "close": "Cerrar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "export": "Exportar",
+    "import": "Importar",
+    "download": "Descargar",
+    "upload": "Subir",
+    "submit": "Enviar",
+    "reset": "Restablecer",
+    "clear": "Limpiar",
+    "apply": "Aplicar",
+    "confirm": "Confirmar",
+    "yes": "Sí",
+    "no": "No"
+  }
+}

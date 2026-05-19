@@ -1,0 +1,241 @@
+/* ============================================================
+   N8N-GLOBAL.CSS — Ocean Dark Base Theme
+   Clean global resets and base styles only.
+   No !important overrides. No pink leftovers.
+   ============================================================ */
+
+:root {
+  /* Pyron-style deep dark base */
+  --ocean-dark: #080c14;
+  --ocean-darker: #050810;
+  --ocean-blue: #0c1526;
+  --ocean-light: #101d30;
+  /* Vivid blue accent */
+  --ocean-accent: #1e78ff;
+  --ocean-accent-light: #5aa3ff;
+  --ocean-accent-dark: #0055cc;
+  --ocean-glow: rgba(30, 120, 255, 0.4);
+  --ocean-glow-lg: rgba(30, 120, 255, 0.6);
+
+  --n8n-bg-primary: #080c14;
+  --n8n-bg-secondary: #0c1526;
+  --n8n-bg-gradient: linear-gradient(135deg, #080c14 0%, #0c1526 100%);
+  --n8n-bg-dark: linear-gradient(135deg, #080c14 0%, #0c1526 100%);
+
+  --n8n-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --n8n-shadow-md: 0 4px 12px rgba(30, 120, 255, 0.2);
+  --n8n-shadow-lg: 0 12px 32px rgba(30, 120, 255, 0.25);
+  --n8n-shadow-xl: 0 20px 48px rgba(30, 120, 255, 0.35);
+}
+
+/* ── Base ── */
+html {
+  background: var(--ocean-dark);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ocean-dark);
+  color: #ffffff;
+  font-family: 'Inter', 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.6;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+}
+
+#root {
+  background: var(--ocean-dark);
+  min-height: 100vh;
+}
+
+/* ── Typography ── */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: #ffffff;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; }
+h2 { font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 700; }
+h3 { font-size: clamp(1.1rem, 2vw, 1.5rem); font-weight: 700; }
+h4 { font-size: 1.1rem; font-weight: 600; }
+
+p {
+  color: rgba(255,255,255,0.72);
+  line-height: 1.7;
+  font-size: 0.9375rem;
+}
+
+strong { color: #ffffff; font-weight: 600; }
+
+/* ── Links — only set color where not overridden by component ── */
+a {
+  color: var(--ocean-accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--ocean-accent-light);
+}
+
+/* ── Focus ── */
+*:focus-visible {
+  outline: 2px solid var(--ocean-accent);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(0, 191, 255, 0.2);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--ocean-blue); }
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 191, 255, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 191, 255, 0.5);
+}
+
+/* ── App layout ── */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--ocean-dark);
+}
+
+.main-content {
+  flex: 1;
+  padding-top: var(--ss-header-total, 92px);
+  background: var(--ocean-dark);
+}
+
+/* ── Page backgrounds ── */
+.trends-page,
+.enterprise-map-page,
+.pricing-page,
+.n8n-home,
+.cp-page,
+.faq-page,
+.ct-page,
+.nf-page,
+.dashboard-page-modern,
+.modern-auth-page,
+.legal-page {
+  background: var(--ocean-dark);
+  color: #ffffff;
+}
+
+/* ── Banner ── */
+.n8n-banner {
+  width: 100%;
+  padding: 0.875rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 9998;
+}
+.n8n-banner-content {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.n8n-banner-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.n8n-banner-message {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+.n8n-banner-link {
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+.n8n-banner-link:hover { opacity: 0.8; }
+.n8n-banner-close {
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  transition: all 0.2s;
+}
+.n8n-banner-close:hover { background: rgba(0, 0, 0, 0.1); }
+
+.n8n-banner-info {
+  background: linear-gradient(135deg, rgba(0, 191, 255, 0.1) 0%, rgba(0, 102, 204, 0.1) 100%);
+  color: var(--ocean-accent);
+  border-bottom: 1px solid rgba(0, 191, 255, 0.2);
+}
+.n8n-banner-info .n8n-banner-link { color: var(--ocean-accent); }
+
+.n8n-banner-success {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.1) 100%);
+  color: #10b981;
+  border-bottom: 1px solid rgba(16, 185, 129, 0.2);
+}
+.n8n-banner-success .n8n-banner-link { color: #10b981; }
+
+.n8n-banner-warning {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(217, 119, 6, 0.1) 100%);
+  color: #f59e0b;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+}
+.n8n-banner-warning .n8n-banner-link { color: #f59e0b; }
+
+.n8n-banner-promo {
+  background: linear-gradient(135deg, var(--ocean-accent) 0%, var(--ocean-accent-dark) 100%);
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.n8n-banner-promo .n8n-banner-link { color: #ffffff; text-decoration: underline; }
+.n8n-banner-promo .n8n-banner-close:hover { background: rgba(255, 255, 255, 0.2); }
+
+@media (max-width: 640px) {
+  .n8n-banner { padding: 0.75rem 1rem; }
+  .n8n-banner-message { font-size: 0.8125rem; gap: 0.5rem; }
+  .n8n-banner-icon { display: none; }
+}
+
+/* ── Utility: glass card ── */
+.glass-card {
+  background: rgba(12, 21, 38, 0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(30, 120, 255, 0.15);
+  border-radius: 1.25rem;
+}
+
+/* ── Spinner ── */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 191, 255, 0.3);
+  border-top-color: var(--ocean-accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}

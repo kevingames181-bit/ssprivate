@@ -1,0 +1,81 @@
+/* ============================================================
+   N8N-PAGES.CSS
+   Only styles NOT covered by page-specific CSS files.
+   Trends toolbar lives in n8n-trends.css
+   Company/FAQ/Contact/404 live in pages.css
+   ============================================================ */
+
+/* ── page-header (Trends page header area) ── */
+.page-header {
+  padding: 2.5rem 3rem;
+  background: rgba(10, 20, 35, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 191, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.page-title-section {
+  width: 100%;
+}
+
+.page-title-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-title-with-icon svg {
+  color: var(--ocean-accent);
+  flex-shrink: 0;
+}
+
+.page-title-with-icon h1 {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--ocean-accent) 0%, var(--ocean-accent-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.page-title-section > p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0;
+  font-weight: 500;
+}
+
+.adfg-data-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 1.1rem;
+  background: rgba(0, 191, 255, 0.1);
+  border: 1px solid rgba(0, 191, 255, 0.25);
+  border-radius: 99px;
+  color: var(--ocean-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 0.75rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .page-header { padding: 2rem 2rem; }
+}
+
+@media (max-width: 768px) {
+  .page-header { padding: 1.5rem 1.25rem; }
+  .page-title-with-icon { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+  .page-title-with-icon h1 { font-size: 1.75rem; }
+}

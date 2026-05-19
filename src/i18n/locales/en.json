@@ -1,0 +1,207 @@
+{
+  "nav": {
+    "home": "Home",
+    "map": "Map",
+    "trends": "Trends",
+    "pricing": "Pricing",
+    "company": "Company",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Logout",
+    "dashboard": "Dashboard"
+  },
+  "hero": {
+    "badge": "Alaska's Premier Fishery Intelligence",
+    "title": "Real-Time Fishery Intelligence for",
+    "titleHighlight": "Alaska Waters",
+    "subtitle": "Make informed decisions with live ADF&G data, AI-powered insights, and comprehensive analytics for Alaska's fishing industry.",
+    "ctaPrimary": "Start Free Trial",
+    "ctaSecondary": "View Live Map",
+    "stats": {
+      "districts": "Fishing Districts",
+      "users": "Active Users",
+      "updates": "Live Updates"
+    }
+  },
+  "features": {
+    "title": "Everything You Need",
+    "subtitle": "Powerful tools designed for Alaska's fishing industry",
+    "realtime": {
+      "title": "Real-Time ADF&G Data",
+      "description": "Access live fishery openings, closures, and regulations directly from Alaska Department of Fish & Game."
+    },
+    "ai": {
+      "title": "AI-Powered Insights",
+      "description": "Machine learning algorithms analyze historical patterns to predict optimal fishing windows and catch potential."
+    },
+    "map": {
+      "title": "Interactive Maps",
+      "description": "Visualize fishing districts, weather patterns, tide predictions, and vessel locations on detailed Alaska maps."
+    },
+    "analytics": {
+      "title": "Advanced Analytics",
+      "description": "Track catch trends, compare historical data, and generate comprehensive reports for your operation."
+    },
+    "mobile": {
+      "title": "Mobile Access",
+      "description": "Stay connected on the water with our mobile-optimized platform. Access critical data from any device."
+    },
+    "alerts": {
+      "title": "Smart Alerts",
+      "description": "Receive instant notifications for fishery openings, weather changes, and important regulatory updates."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Sign in to access your fishery intelligence dashboard",
+      "badge": "Secure Login",
+      "email": "Email Address",
+      "password": "Password",
+      "forgot": "Forgot?",
+      "submit": "Sign In",
+      "submitting": "Signing In...",
+      "google": "Google",
+      "divider": "Or continue with",
+      "noAccount": "Don't have an account?",
+      "createAccount": "Create one now"
+    },
+    "signup": {
+      "title": "Create Account",
+      "subtitle": "Join Alaska's premier fishery intelligence platform",
+      "badge": "Start Free Trial",
+      "name": "Full Name",
+      "email": "Email Address",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "submit": "Create Account",
+      "submitting": "Creating Account...",
+      "google": "Google",
+      "divider": "Or continue with",
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign in"
+    },
+    "forgot": {
+      "title": "Forgot Password",
+      "subtitle": "Enter your email and we'll send you a reset link",
+      "badge": "Password Reset",
+      "email": "Email Address",
+      "submit": "Send Reset Link",
+      "submitting": "Sending...",
+      "success": {
+        "title": "Check Your Email",
+        "subtitle": "We've sent a password reset link to",
+        "badge": "Email Sent",
+        "message": "Click the link in the email to reset your password."
+      },
+      "remember": "Remember your password?",
+      "noAccount": "Don't have an account?",
+      "createAccount": "Create one"
+    }
+  },
+  "company": {
+    "badge": "Since 2024 • Alaska-Based • Industry Leaders",
+    "title": "Empowering Alaska's Fishing Industry",
+    "subtitle": "We're building the future of fishery intelligence with real-time data, AI-powered insights, and a deep commitment to Alaska's fishing community.",
+    "stats": {
+      "districts": "Fishing Districts",
+      "users": "Active Users",
+      "updates": "Live Data Updates",
+      "uptime": "Uptime"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text1": "To revolutionize Alaska's fishing industry by providing accessible, real-time fishery intelligence that empowers fishermen, fleet operators, and industry professionals to make informed decisions on the water.",
+      "text2": "We believe that data-driven insights should be available to everyone in the fishing community, from independent fishermen to large commercial operations. Our platform democratizes access to critical information that was once only available to a select few."
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "The principles that guide everything we do",
+      "reliability": {
+        "title": "Reliability",
+        "description": "We provide accurate, real-time data you can trust. Our platform is built on robust infrastructure with 99.9% uptime."
+      },
+      "community": {
+        "title": "Community First",
+        "description": "Alaska's fishing community is at the heart of everything we do. We listen, learn, and build features that matter to you."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We leverage cutting-edge AI and machine learning to provide predictive insights that give you a competitive edge."
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "We're committed to supporting sustainable fishing practices and preserving Alaska's marine ecosystems for future generations."
+      },
+      "improvement": {
+        "title": "Continuous Improvement",
+        "description": "We're constantly evolving our platform based on user feedback and the latest technology to serve you better."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "We strive for excellence in every aspect of our platform, from data accuracy to user experience and customer support."
+      }
+    },
+    "story": {
+      "title": "Our Story",
+      "text1": "SeaScope was born from a simple observation: Alaska's fishing industry needed better tools to navigate an increasingly complex and data-driven world. Founded in 2024 by a team of technologists and fishing industry veterans, we set out to build a platform that would level the playing field.",
+      "text2": "What started as a basic mapping tool has evolved into Alaska's most comprehensive fishery intelligence platform. Today, we serve thousands of users across all major fishing regions, from Bristol Bay to Southeast Alaska, providing real-time data, AI-powered predictions, and actionable insights that help our users succeed.",
+      "text3": "We're proud to be Alaska-based and deeply connected to the communities we serve. Our team includes former fishermen, marine biologists, data scientists, and software engineers—all united by a passion for supporting Alaska's fishing industry."
+    },
+    "team": {
+      "title": "Built by Experts",
+      "subtitle": "Our team combines deep industry knowledge with cutting-edge technology",
+      "experience": "Years Combined Fishing Experience",
+      "experts": "Technology & Data Science Experts",
+      "based": "Alaska-Based Team"
+    },
+    "cta": {
+      "title": "Join Alaska's Fishing Community",
+      "subtitle": "Experience the power of real-time fishery intelligence. Start your free trial today.",
+      "primary": "Start Free Trial",
+      "secondary": "Contact Us"
+    }
+  },
+  "footer": {
+    "tagline": "Alaska's Premier Fishery Intelligence Platform",
+    "description": "Real-time data, AI-powered insights, and comprehensive analytics for Alaska's fishing industry.",
+    "product": "Product",
+    "company": "Company",
+    "support": "Support",
+    "legal": "Legal",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookie Policy",
+    "rights": "All rights reserved.",
+    "language": "Language"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "export": "Export",
+    "import": "Import",
+    "download": "Download",
+    "upload": "Upload",
+    "submit": "Submit",
+    "reset": "Reset",
+    "clear": "Clear",
+    "apply": "Apply",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No"
+  }
+}

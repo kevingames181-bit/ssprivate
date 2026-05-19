@@ -1,0 +1,44 @@
+<svg width="500" height="400" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Alaska Map Illustration -->
+  <defs>
+    <linearGradient id="mapGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a2540;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#1a3a5c;stop-opacity:0.7" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Alaska Outline (simplified) -->
+  <path d="M100 150 L150 120 L200 130 L250 110 L300 120 L350 100 L380 130 L400 160 L390 200 L370 240 L340 270 L300 280 L250 270 L200 260 L150 240 L120 210 L100 180 Z" 
+        fill="url(#mapGradient)" stroke="#00d4aa" stroke-width="2" opacity="0.8"/>
+  
+  <!-- Location Pins -->
+  <g>
+    <circle cx="180" cy="180" r="8" fill="#ff3b30">
+      <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M180 170 L180 180" stroke="#ff3b30" stroke-width="2"/>
+    
+    <circle cx="280" cy="200" r="8" fill="#ff3b30">
+      <animate attributeName="r" values="8;12;8" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M280 190 L280 200" stroke="#ff3b30" stroke-width="2"/>
+    
+    <circle cx="320" cy="160" r="8" fill="#ff3b30">
+      <animate attributeName="r" values="8;12;8" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M320 150 L320 160" stroke="#ff3b30" stroke-width="2"/>
+  </g>
+  
+  <!-- Heatmap Circles -->
+  <circle cx="200" cy="200" r="40" fill="#00d4aa" opacity="0.2"/>
+  <circle cx="300" cy="180" r="50" fill="#0080ff" opacity="0.2"/>
+  <circle cx="250" cy="220" r="35" fill="#ff3b30" opacity="0.2"/>
+  
+  <!-- Grid Lines -->
+  <line x1="100" y1="150" x2="400" y2="150" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+  <line x1="100" y1="200" x2="400" y2="200" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+  <line x1="100" y1="250" x2="400" y2="250" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+  <line x1="150" y1="100" x2="150" y2="300" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+  <line x1="250" y1="100" x2="250" y2="300" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+  <line x1="350" y1="100" x2="350" y2="300" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+</svg>

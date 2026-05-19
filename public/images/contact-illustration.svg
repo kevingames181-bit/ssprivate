@@ -1,0 +1,36 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Contact/Communication Illustration -->
+  <defs>
+    <linearGradient id="messageGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4aa;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#0080ff;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Message Bubble 1 -->
+  <rect x="80" y="100" width="150" height="80" rx="15" fill="url(#messageGradient)"/>
+  <polygon points="100,180 110,180 95,195" fill="url(#messageGradient)"/>
+  
+  <!-- Lines in bubble -->
+  <line x1="100" y1="120" x2="210" y2="120" stroke="#ffffff" stroke-width="3" opacity="0.8" stroke-linecap="round"/>
+  <line x1="100" y1="140" x2="190" y2="140" stroke="#ffffff" stroke-width="3" opacity="0.8" stroke-linecap="round"/>
+  <line x1="100" y1="160" x2="200" y2="160" stroke="#ffffff" stroke-width="3" opacity="0.8" stroke-linecap="round"/>
+  
+  <!-- Message Bubble 2 -->
+  <rect x="170" y="140" width="150" height="80" rx="15" fill="#0a2540" opacity="0.9"/>
+  <polygon points="300,220 290,220 305,235" fill="#0a2540" opacity="0.9"/>
+  
+  <!-- Lines in bubble 2 -->
+  <line x1="190" y1="160" x2="300" y2="160" stroke="#00d4aa" stroke-width="3" opacity="0.8" stroke-linecap="round"/>
+  <line x1="190" y1="180" x2="280" y2="180" stroke="#00d4aa" stroke-width="3" opacity="0.8" stroke-linecap="round"/>
+  <line x1="190" y1="200" x2="290" y2="200" stroke="#00d4aa" stroke-width="3" opacity="0.8" stroke-linecap="round"/>
+  
+  <!-- Envelope -->
+  <rect x="150" y="40" width="100" height="70" rx="5" fill="#ff3b30" opacity="0.8"/>
+  <path d="M150 40 L200 75 L250 40" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Notification Dot -->
+  <circle cx="240" cy="50" r="8" fill="#00d4aa">
+    <animate attributeName="r" values="8;10;8" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

@@ -1,0 +1,28 @@
+<svg width="500" height="300" viewBox="0 0 500 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Team/People Illustration -->
+  <defs>
+    <linearGradient id="teamGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a2540;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#1a3a5c;stop-opacity:0.7" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Person 1 -->
+  <circle cx="150" cy="120" r="30" fill="url(#teamGradient)"/>
+  <path d="M120 180 Q150 160 180 180 L180 220 L120 220 Z" fill="url(#teamGradient)"/>
+  
+  <!-- Person 2 (Center, larger) -->
+  <circle cx="250" cy="110" r="35" fill="#00d4aa"/>
+  <path d="M215 175 Q250 150 285 175 L285 230 L215 230 Z" fill="#00d4aa"/>
+  
+  <!-- Person 3 -->
+  <circle cx="350" cy="120" r="30" fill="url(#teamGradient)"/>
+  <path d="M320 180 Q350 160 380 180 L380 220 L320 220 Z" fill="url(#teamGradient)"/>
+  
+  <!-- Connection Lines -->
+  <line x1="180" y1="150" x2="220" y2="140" stroke="#0080ff" stroke-width="2" opacity="0.4" stroke-dasharray="5,5"/>
+  <line x1="280" y1="140" x2="320" y2="150" stroke="#0080ff" stroke-width="2" opacity="0.4" stroke-dasharray="5,5"/>
+  
+  <!-- Stars/Achievement -->
+  <polygon points="250,50 255,65 270,65 258,75 263,90 250,80 237,90 242,75 230,65 245,65" fill="#ff3b30" opacity="0.8"/>
+</svg>

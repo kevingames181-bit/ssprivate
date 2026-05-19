@@ -1,0 +1,533 @@
+/* =========================================================
+   ULTRA LUXURY CINEMATIC FOOTER
+   Princess Cruises Inspired
+   Ultra-Premium Ocean Experience
+   ========================================================= */
+
+.site-footer {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  padding:
+    8rem
+    clamp(2rem, 6vw, 6rem)
+    2.5rem;
+
+  background:
+    linear-gradient(
+      180deg,
+      #020812 0%,
+      #04111f 25%,
+      #07192d 55%,
+      #0b2340 100%
+    );
+
+  border-top:
+    1px solid rgba(255,255,255,0.06);
+}
+
+/* =========================================================
+   CINEMATIC OCEAN LIGHTING
+   ========================================================= */
+
+.site-footer::before {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+
+  z-index: -3;
+
+  background:
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(0, 157, 255, 0.14),
+      transparent 25%
+    ),
+
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(0, 98, 255, 0.14),
+      transparent 30%
+    ),
+
+    radial-gradient(
+      circle at 50% 120%,
+      rgba(0, 255, 200, 0.06),
+      transparent 40%
+    );
+
+  filter: blur(90px);
+
+  animation:
+    cinematicGlow 14s ease-in-out infinite alternate;
+}
+
+/* =========================================================
+   MASSIVE LUXURY FADE
+   ========================================================= */
+
+.site-footer::after {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+
+  z-index: -2;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.015),
+      transparent 20%
+    );
+
+  opacity: 0.7;
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.footer-container {
+  position: relative;
+  z-index: 5;
+
+  max-width: 1650px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns:
+    minmax(450px, 2.6fr)
+    repeat(3, minmax(180px, 1fr));
+
+  gap: clamp(2rem, 5vw, 6rem);
+
+  padding-bottom: 4rem;
+}
+
+/* =========================================================
+   PREMIUM GLASS PANELS
+   ========================================================= */
+
+.footer-section {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+
+  padding:
+    2rem
+    2rem
+    2.2rem;
+
+  border-radius: 34px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.045),
+      rgba(255,255,255,0.015)
+    );
+
+  border:
+    1px solid rgba(255,255,255,0.06);
+
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.06),
+    0 20px 80px rgba(0,0,0,0.35);
+
+  transition:
+    transform 0.5s cubic-bezier(.2,.8,.2,1),
+    background 0.5s ease,
+    border-color 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+.footer-section:hover {
+  transform:
+    translateY(-8px);
+
+  border-color:
+    rgba(0, 174, 255, 0.16);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.06),
+      rgba(255,255,255,0.02)
+    );
+
+  box-shadow:
+    0 35px 120px rgba(0, 119, 255, 0.08),
+    inset 0 1px 0 rgba(255,255,255,0.08);
+}
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.footer-logo-link {
+  display: inline-flex;
+  width: fit-content;
+
+  transition:
+    transform 0.45s cubic-bezier(.2,.8,.2,1),
+    filter 0.45s ease;
+}
+
+.footer-logo-link:hover {
+  transform:
+    scale(1.04)
+    translateY(-2px);
+
+  filter:
+    drop-shadow(0 0 45px rgba(0, 174, 255, 0.4));
+}
+
+.footer-logo-img {
+  height: 125px;
+  width: auto;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+
+.footer-about {
+  max-width: 560px;
+}
+
+.footer-about p {
+  margin: 0;
+
+  color:
+    rgba(255,255,255,0.74);
+
+  font-size: 1rem;
+  line-height: 2;
+
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+/* =========================================================
+   SECTION TITLES
+   ========================================================= */
+
+.footer-section h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 0.76rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  opacity: 0.95;
+}
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+.footer-links,
+.social-links {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-links a,
+.social-link {
+  position: relative;
+
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+
+  color:
+    rgba(255,255,255,0.68);
+
+  text-decoration: none;
+
+  font-size: 0.96rem;
+  font-weight: 500;
+
+  transition:
+    transform 0.35s cubic-bezier(.2,.8,.2,1),
+    color 0.35s ease,
+    opacity 0.35s ease;
+}
+
+/* Smooth luxury underline */
+
+.footer-links a::after,
+.social-link::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+
+  width: 0%;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00d0ff,
+      #0077ff
+    );
+
+  transition:
+    width 0.35s ease;
+}
+
+.footer-links a:hover,
+.social-link:hover {
+  color: #ffffff;
+
+  transform:
+    translateX(6px);
+}
+
+.footer-links a:hover::after,
+.social-link:hover::after {
+  width: 100%;
+}
+
+/* =========================================================
+   BOTTOM
+   ========================================================= */
+
+.footer-bottom {
+  position: relative;
+  z-index: 5;
+
+  padding-top: 2.8rem;
+}
+
+.footer-bottom::before {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: min(1650px, 100%);
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,0.08),
+      transparent
+    );
+}
+
+.footer-bottom-content {
+  max-width: 1650px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* =========================================================
+   COPYRIGHT
+   ========================================================= */
+
+.copyright,
+.pyron-credit {
+  margin: 0;
+
+  color:
+    rgba(255,255,255,0.4);
+
+  font-size: 0.82rem;
+  font-weight: 700;
+
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.pyron-credit a {
+  color: #5bc8ff;
+
+  text-decoration: none;
+
+  transition:
+    color 0.35s ease,
+    text-shadow 0.35s ease;
+}
+
+.pyron-credit a:hover {
+  color: #ffffff;
+
+  text-shadow:
+    0 0 24px rgba(0, 174, 255, 0.55);
+}
+
+/* =========================================================
+   CINEMATIC ORBS
+   ========================================================= */
+
+.footer-orb {
+  position: absolute;
+
+  width: 550px;
+  height: 550px;
+
+  border-radius: 999px;
+
+  filter: blur(160px);
+
+  opacity: 0.14;
+
+  pointer-events: none;
+}
+
+.footer-orb.left {
+  top: -220px;
+  left: -220px;
+
+  background:
+    #008cff;
+}
+
+.footer-orb.right {
+  right: -220px;
+  bottom: -220px;
+
+  background:
+    #00d4ff;
+}
+
+/* =========================================================
+   SHIMMER TOP BORDER
+   ========================================================= */
+
+.footer-shimmer {
+  position: absolute;
+  top: 0;
+  left: -40%;
+
+  width: 40%;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,0.7),
+      transparent
+    );
+
+  animation:
+    shimmerMove 7s linear infinite;
+}
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+@keyframes cinematicGlow {
+  0% {
+    transform:
+      translateY(0px)
+      scale(1);
+  }
+
+  100% {
+    transform:
+      translateY(-35px)
+      scale(1.08);
+  }
+}
+
+@keyframes shimmerMove {
+  0% {
+    transform: translateX(-120%);
+  }
+
+  100% {
+    transform: translateX(350%);
+  }
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1250px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-about {
+    grid-column: 1 / -1;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding:
+      5rem
+      1.5rem
+      2rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-logo-img {
+    height: 90px;
+  }
+
+  .footer-section {
+    border-radius: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-bottom-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    padding: 1.5rem;
+  }
+}

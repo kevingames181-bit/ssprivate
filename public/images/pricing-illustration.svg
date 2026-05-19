@@ -1,0 +1,38 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pricing/Money Illustration -->
+  <defs>
+    <linearGradient id="coinGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff3b30;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b35;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Coins Stack -->
+  <ellipse cx="150" cy="200" rx="60" ry="15" fill="url(#coinGradient)" opacity="0.3"/>
+  <ellipse cx="150" cy="190" rx="60" ry="15" fill="url(#coinGradient)" opacity="0.5"/>
+  <ellipse cx="150" cy="180" rx="60" ry="15" fill="url(#coinGradient)" opacity="0.7"/>
+  <ellipse cx="150" cy="170" rx="60" ry="15" fill="url(#coinGradient)"/>
+  
+  <!-- Dollar Sign -->
+  <text x="140" y="180" font-size="40" font-weight="bold" fill="#ffffff">$</text>
+  
+  <!-- Growth Arrow -->
+  <path d="M250 200 L300 150 L350 120" stroke="#00d4aa" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <polygon points="350,120 340,125 345,135" fill="#00d4aa"/>
+  
+  <!-- Chart Bars -->
+  <rect x="260" y="180" width="20" height="40" fill="#0080ff" opacity="0.6" rx="3"/>
+  <rect x="290" y="160" width="20" height="60" fill="#0080ff" opacity="0.7" rx="3"/>
+  <rect x="320" y="140" width="20" height="80" fill="#0080ff" opacity="0.8" rx="3"/>
+  
+  <!-- Sparkles -->
+  <circle cx="180" cy="150" r="3" fill="#00d4aa">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="160" r="2" fill="#00d4aa">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="170" cy="165" r="2" fill="#00d4aa">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+</svg>

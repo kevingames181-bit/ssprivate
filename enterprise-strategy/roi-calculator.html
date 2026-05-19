@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeaScope Alaska - ROI Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #1e3c72;
+            font-size: 24px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .input-group {
+            margin-bottom: 20px;
+        }
+        
+        .input-group label {
+            display: block;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .input-group input, .input-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        .input-group input:focus, .input-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .input-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .calculate-btn {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .calculate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .results {
+            display: none;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        .results.show {
+            display: block;
+        }
+        
+        .result-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .result-card h3 {
+            color: #1e3c72;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .result-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: #667eea;
+        }
+        
+        .result-label {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .roi-highlight {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .roi-highlight .big-number {
+            font-size: 64px;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+        
+        .breakdown {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .footer {
+            background: #f5f5f5;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 32px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>SeaScope Alaska ROI Calculator</h1>
+            <p>Calculate your potential return on investment</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>Your Operation Details</h2>
+                
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="vessels">Number of Vessels</label>
+                        <input type="number" id="vessels" value="1" min="1" max="100">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="operationType">Operation Type</label>
+                        <select id="operationType">
+                            <option value="individual">Individual Operator (1-2 vessels)</option>
+                            <option value="fleet">Commercial Fleet (5-20 vessels)</option>
+                            <option value="government">Government/Agency</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="tripsPerSeason">Trips per Season (per vessel)</label>
+                        <input type="number" id="tripsPerSeason" value="20" min="1" max="200">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="fuelCostPerTrip">Average Fuel Cost per Trip ($)</label>
+                        <input type="number" id="fuelCostPerTrip" value="5000" min="0" step="100">
+                    </div>
+                </div>
+                
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="goodTripRevenue">Revenue per Good Trip ($)</label>
+                        <input type="number" id="goodTripRevenue" value="50000" min="0" step="1000">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="badTripRevenue">Revenue per Bad Trip ($)</label>
+                        <input type="number" id="badTripRevenue" value="25000" min="0" step="1000">
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <label for="currentAccuracy">Current Timing Accuracy (%)</label>
+                    <input type="range" id="currentAccuracy" value="60" min="0" max="100" oninput="document.getElementById('accuracyValue').textContent = this.value + '%'">
+                    <div style="text-align: center; margin-top: 5px; font-weight: 600; color: #667eea;">
+                        <span id="accuracyValue">60%</span>
+                    </div>
+                </div>
+                
+                <button class="calculate-btn" onclick="calculateROI()">Calculate My ROI</button>
+            </div>
+            
+            <div class="results" id="results">
+                <h2 style="color: #1e3c72; margin-bottom: 20px;">Your Potential ROI with SeaScope</h2>
+                
+                <div class="breakdown">
+                    <div class="result-card">
+                        <h3>Annual Fuel Savings</h3>
+                        <div class="result-value" id="fuelSavings">$0</div>
+                        <div class="result-label">15-25% reduction</div>
+                    </div>
+                    
+                    <div class="result-card">
+                        <h3>Improved Catch Value</h3>
+                        <div class="result-value" id="catchImprovement">$0</div>
+                        <div class="result-label">Better timing decisions</div>
+                    </div>
+                    
+                    <div class="result-card">
+                        <h3>Total Annual Benefit</h3>
+                        <div class="result-value" id="totalBenefit">$0</div>
+                        <div class="result-label">Combined savings + revenue</div>
+                    </div>
+                    
+                    <div class="result-card">
+                        <h3>SeaScope Investment</h3>
+                        <div class="result-value" id="investment">$0</div>
+                        <div class="result-label" id="investmentLabel">Annual cost</div>
+                    </div>
+                </div>
+                
+                <div class="roi-highlight">
+                    <div style="font-size: 20px; opacity: 0.9;">Your Return on Investment</div>
+                    <div class="big-number" id="roiMultiple">0x</div>
+                    <div style="font-size: 18px;">Net Profit: <span id="netProfit" style="font-weight: 700;">$0</span></div>
+                    <div style="margin-top: 15px; font-size: 14px; opacity: 0.9;">
+                        Break-even in <span id="breakEven" style="font-weight: 700;">0</span> months
+                    </div>
+                </div>
+                
+                <div style="background: white; padding: 20px; border-radius: 8px; margin-top: 20px;">
+                    <h3 style="color: #1e3c72; margin-bottom: 15px;">3-Year Projection</h3>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; text-align: center;">
+                        <div>
+                            <div style="font-size: 14px; color: #666; margin-bottom: 5px;">Year 1</div>
+                            <div style="font-size: 24px; font-weight: 700; color: #667eea;" id="year1">$0</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 14px; color: #666; margin-bottom: 5px;">Year 2</div>
+                            <div style="font-size: 24px; font-weight: 700; color: #667eea;" id="year2">$0</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 14px; color: #666; margin-bottom: 5px;">Year 3</div>
+                            <div style="font-size: 24px; font-weight: 700; color: #667eea;" id="year3">$0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <h3 style="color: #333; margin-bottom: 10px;">Ready to maximize your profit?</h3>
+            <p>Schedule a personalized demo to see SeaScope with your specific region and species.</p>
+            <a href="mailto:contact@seascope-alaska.com" class="cta-button">Schedule Demo</a>
+            <div style="margin-top: 20px; font-size: 14px;">
+                <strong>Pilot Program:</strong> 50% discount + money-back guarantee<br>
+                Questions? Call (555) 123-4567
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function calculateROI() {
+            // Get input values
+            const vessels = parseInt(document.getElementById('vessels').value);
+            const operationType = document.getElementById('operationType').value;
+            const tripsPerSeason = parseInt(document.getElementById('tripsPerSeason').value);
+            const fuelCostPerTrip = parseFloat(document.getElementById('fuelCostPerTrip').value);
+            const goodTripRevenue = parseFloat(document.getElementById('goodTripRevenue').value);
+            const badTripRevenue = parseFloat(document.getElementById('badTripRevenue').value);
+            const currentAccuracy = parseInt(document.getElementById('currentAccuracy').value) / 100;
+            
+            // Calculate current state
+            const totalTrips = vessels * tripsPerSeason;
+            const currentGoodTrips = totalTrips * currentAccuracy;
+            const currentBadTrips = totalTrips * (1 - currentAccuracy);
+            const currentRevenue = (currentGoodTrips * goodTripRevenue) + (currentBadTrips * badTripRevenue);
+            const currentFuelCost = totalTrips * fuelCostPerTrip;
+            
+            // Calculate with SeaScope (80% accuracy)
+            const improvedAccuracy = 0.80;
+            const improvedGoodTrips = totalTrips * improvedAccuracy;
+            const improvedBadTrips = totalTrips * (1 - improvedAccuracy);
+            const improvedRevenue = (improvedGoodTrips * goodTripRevenue) + (improvedBadTrips * badTripRevenue);
+            
+            // Fuel savings (20% average reduction)
+            const fuelSavingsPercent = 0.20;
+            const fuelSavings = currentFuelCost * fuelSavingsPercent;
+            
+            // Catch improvement
+            const catchImprovement = improvedRevenue - currentRevenue;
+            
+            // Total benefit
+            const totalBenefit = fuelSavings + catchImprovement;
+            
+            // SeaScope cost based on operation type
+            let investment;
+            if (operationType === 'individual') {
+                investment = vessels * 2500;
+            } else if (operationType === 'fleet') {
+                if (vessels <= 5) investment = 15000;
+                else if (vessels <= 10) investment = 25000;
+                else if (vessels <= 15) investment = 35000;
+                else investment = 50000;
+            } else {
+                investment = 75000; // Government/Agency
+            }
+            
+            // ROI calculations
+            const netProfit = totalBenefit - investment;
+            const roiMultiple = totalBenefit / investment;
+            const breakEvenMonths = Math.ceil((investment / totalBenefit) * 12);
+            
+            // 3-year projection
+            const year1 = netProfit;
+            const year2 = netProfit * 2; // Cumulative
+            const year3 = netProfit * 3; // Cumulative
+            
+            // Update display
+            document.getElementById('fuelSavings').textContent = '$' + fuelSavings.toLocaleString('en-US', {maximumFractionDigits: 0});
+            document.getElementById('catchImprovement').textContent = '$' + catchImprovement.toLocaleString('en-US', {maximumFractionDigits: 0});
+            document.getElementById('totalBenefit').textContent = '$' + totalBenefit.toLocaleString('en-US', {maximumFractionDigits: 0});
+            document.getElementById('investment').textContent = '$' + investment.toLocaleString('en-US', {maximumFractionDigits: 0});
+            document.getElementById('roiMultiple').textContent = roiMultiple.toFixed(1) + 'x';
+            document.getElementById('netProfit').textContent = '$' + netProfit.toLocaleString('en-US', {maximumFractionDigits: 0});
+            document.getElementById('breakEven').textContent = breakEvenMonths;
+            document.getElementById('year1').textContent = '$' + year1.toLocaleString('en-US', {maximumFractionDigits: 0});
+            document.getElementById('year2').textContent = '$' + year2.toLocaleString('en-US', {maximumFractionDigits: 0});
+            document.getElementById('year3').textContent = '$' + year3.toLocaleString('en-US', {maximumFractionDigits: 0});
+            
+            // Show results
+            document.getElementById('results').classList.add('show');
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    </script>
+</body>
+</html>

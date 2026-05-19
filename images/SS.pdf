@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeaScope - Alaska's Premier Fishery Intelligence Platform</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+        }
+        
+        .slide {
+            page-break-after: always;
+            min-height: 250mm;
+            padding: 40px;
+            background: linear-gradient(135deg, #0a1929 0%, #1a2332 100%);
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        .slide.white {
+            background: #fff;
+            color: #333;
+            border: 2px solid #0a1929;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            color: #64b5f6;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        h2 {
+            font-size: 2em;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            color: #90caf9;
+            border-bottom: 3px solid #64b5f6;
+            padding-bottom: 10px;
+        }
+        
+        .slide.white h2 {
+            color: #0a1929;
+            border-bottom-color: #0a1929;
+        }
+        
+        h3 {
+            font-size: 1.5em;
+            margin-top: 1em;
+            color: #64b5f6;
+        }
+        
+        .slide.white h3 {
+            color: #1976d2;
+        }
+        
+        p {
+            margin: 1em 0;
+            font-size: 1.1em;
+        }
+        
+        ul, ol {
+            margin: 1em 0;
+            padding-left: 2em;
+        }
+        
+        li {
+            margin: 0.5em 0;
+            font-size: 1.1em;
+        }
+        
+        .subtitle {
+            font-size: 1.5em;
+            color: #90caf9;
+            margin-top: 0;
+        }
+        
+        .tagline {
+            font-size: 1.3em;
+            font-style: italic;
+            color: #64b5f6;
+            margin-top: 2em;
+        }
+        
+        .contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 2em 0;
+        }
+        
+        .slide.white .contact-info {
+            background: rgba(10, 25, 41, 0.05);
+        }
+        
+        .feature-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 5px solid #64b5f6;
+        }
+        
+        .slide.white .feature-box {
+            background: rgba(10, 25, 41, 0.05);
+            border-left-color: #1976d2;
+        }
+        
+        .checkmark {
+            color: #4caf50;
+            font-weight: bold;
+        }
+        
+        strong {
+            color: #64b5f6;
+        }
+        
+        .slide.white strong {
+            color: #1976d2;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 3em;
+            padding-top: 2em;
+            border-top: 2px solid #64b5f6;
+            font-size: 0.9em;
+        }
+        
+        @media print {
+            body {
+                background: #fff;
+            }
+            .slide {
+                page-break-after: always;
+            }
+        }
+    </style>
+<!-- Code injected by Five-server -->
+  <script async="" data-id="five-server" data-file="c:\Users\kevin\Desktop\SeaScope-Alaska\SeaScope_Alaska_Presentation.html" type="application/javascript" src="SS_files/fiveserver.js"></script>
+  <style>      
+      /* Injected by five-server */
+      /*[data-highlight="true"] {
+        border: 1px rgb(90,170,255) solid !important;
+        background-color: rgba(155,215,255,0.5);
+        animation: fadeOutHighlight 1s forwards 0.5s;
+      }
+      img[data-highlight="true"] {
+        filter: sepia(100%) hue-rotate(180deg) saturate(200%);
+        animation: fadeOutHighlightIMG 0.5s forwards 0.5s;
+      }*/
+      @keyframes fadeOutHighlight {
+        from {background-color: rgba(155,215,255,0.5);}
+        to {background-color: rgba(155,215,255,0);}
+      }      
+      @keyframes fadeOutHighlightIMG {
+        0% {filter: sepia(100%) hue-rotate(180deg) saturate(200%);}
+        33% {filter: sepia(66%) hue-rotate(180deg) saturate(100%);}
+        50% {filter: sepia(50%) hue-rotate(90deg) saturate(50%);}
+        66% {filter: sepia(33%) hue-rotate(0deg) saturate(100%);}
+        100% {filter: sepia(0%) hue-rotate(0deg) saturate(100%);}
+      }
+      @keyframes fiveserverInfoPopup {
+        0%   {top:-40px;}
+        15%  {top:4px;}
+        85%  {top:4px;}
+        100% {top:-40px;}
+      }
+      /*smaller*/
+      @media (max-width: 640px) {
+        #fiveserver-info-wrapper {
+          max-width: 98%;
+        }
+        #fiveserver-info {
+          border-radius: 0px;
+        }      
+      }
+
+      </style></head>
+<body>
+
+<!-- Slide 1: Title -->
+<div class="slide">
+    <h1>SeaScope</h1>
+    <p class="subtitle">Alaska's Premier Fishery Intelligence Platform</p>
+    <p class="tagline">Transforming Marine Data into Actionable Insights</p>
+    <div class="contact-info">
+        <p><strong>Website:</strong> www.getseascope.com</p>
+        <p><strong>Company:</strong> Pyron Company</p>
+        <p><strong>Contact:</strong> info@pyroncompany.com</p>
+    </div>
+</div>
+
+<!-- Slide 2: Executive Summary -->
+<div class="slide white">
+    <h2>Executive Summary</h2>
+    <p>SeaScope is a cutting-edge fishery intelligence platform designed
+ specifically for Alaska's marine ecosystem. We provide real-time data 
+visualization, predictive analytics, and comprehensive tide information 
+to empower marine professionals with data-driven decision-making 
+capabilities.</p>
+    <div class="feature-box">
+        <h3>Our Mission</h3>
+        <p>Transform complex fishery data into accessible, actionable 
+insights that support sustainable fishing practices and informed 
+decision-making across Alaska's marine industry.</p>
+    </div>
+</div>
+
+<!-- Slide 3: The Challenge -->
+<div class="slide">
+    <h2>The Challenge</h2>
+    <p>Alaska's fishing industry faces critical challenges:</p>
+    <ul>
+        <li><strong>Data Fragmentation</strong> - Information scattered across multiple sources</li>
+        <li><strong>Limited Real-Time Access</strong> - Delayed data impacts operational decisions</li>
+        <li><strong>Complex Analysis</strong> - Difficulty identifying patterns and trends</li>
+        <li><strong>Inefficient Planning</strong> - Lack of integrated tide and release data</li>
+        <li><strong>Resource Optimization</strong> - Suboptimal route planning and timing</li>
+    </ul>
+</div>
+
+<!-- Slide 4: The Solution -->
+<div class="slide white">
+    <h2>The SeaScope Solution</h2>
+    <h3>1. Interactive Mapping Technology</h3>
+    <ul>
+        <li>Real-time visualization of fish releases and catches</li>
+        <li>Species-specific color coding</li>
+        <li>Quantity-based sizing</li>
+        <li>Geographic filtering by hatchery</li>
+    </ul>
+    <h3>2. Advanced Analytics &amp; Trends</h3>
+    <ul>
+        <li>Historical data tracking</li>
+        <li>Predictive analytics</li>
+        <li>Species breakdown analysis</li>
+    </ul>
+</div>
+
+<!-- Slide 5: More Features -->
+<div class="slide">
+    <h2>Comprehensive Features</h2>
+    <h3>3. Integrated Tide Information</h3>
+    <ul>
+        <li>High and low tide predictions</li>
+        <li>Sunrise and sunset times</li>
+        <li>Location-specific coastal data</li>
+    </ul>
+    <h3>4. Intelligent Filtering System</h3>
+    <ul>
+        <li>Filter by species (Chinook, Sockeye, Coho, Pink, Chum)</li>
+        <li>Filter by hatchery (7+ major Alaska hatcheries)</li>
+        <li>Date range selection</li>
+        <li>Release type (Hatchery vs Wild)</li>
+    </ul>
+</div>
+
+<!-- Slide 6: Target Users -->
+<div class="slide white">
+    <h2>Target Users</h2>
+    <div class="feature-box">
+        <h3>Marine Biologists &amp; Researchers</h3>
+        <p>Access comprehensive datasets, track migration patterns, analyze environmental impacts</p>
+    </div>
+    <div class="feature-box">
+        <h3>Commercial Fishermen</h3>
+        <p>Optimize routes, plan around tides, identify high-yield locations, reduce costs</p>
+    </div>
+    <div class="feature-box">
+        <h3>Fishery Managers &amp; ADF&amp;G Officials</h3>
+        <p>Monitor programs, track trends, make policy decisions, ensure sustainability</p>
+    </div>
+</div>
+
+<!-- Slide 7: Key Benefits -->
+<div class="slide">
+    <h2>Key Benefits</h2>
+    <h3>For Commercial Operations</h3>
+    <ul>
+        <li><span class="checkmark">✓</span> <strong>Increased Efficiency</strong> - Optimize routes and reduce costs</li>
+        <li><span class="checkmark">✓</span> <strong>Better Planning</strong> - Integrated tide and release data</li>
+        <li><span class="checkmark">✓</span> <strong>Higher Yields</strong> - Data-driven location selection</li>
+        <li><span class="checkmark">✓</span> <strong>Time Savings</strong> - All information in one platform</li>
+    </ul>
+    <h3>For Research &amp; Management</h3>
+    <ul>
+        <li><span class="checkmark">✓</span> <strong>Comprehensive Data</strong> - Complete historical records</li>
+        <li><span class="checkmark">✓</span> <strong>Pattern Recognition</strong> - Advanced analytics tools</li>
+        <li><span class="checkmark">✓</span> <strong>Real-Time Updates</strong> - Daily data synchronization</li>
+    </ul>
+</div>
+
+<!-- Slide 8: Technology -->
+<div class="slide white">
+    <h2>Technology Stack</h2>
+    <p class="tagline">Modern, Reliable, Scalable</p>
+    <ul>
+        <li><strong>Frontend:</strong> React + TypeScript for robust performance</li>
+        <li><strong>Mapping:</strong> Leaflet.js for interactive visualizations</li>
+        <li><strong>Analytics:</strong> Recharts for data visualization</li>
+        <li><strong>Data Source:</strong> Alaska Department of Fish &amp; Game (ADF&amp;G)</li>
+        <li><strong>Infrastructure:</strong> Cloud-based for 99.9% uptime</li>
+        <li><strong>Security:</strong> Enterprise-grade data protection</li>
+        <li><strong>Accessibility:</strong> Responsive design for all devices</li>
+    </ul>
+</div>
+
+<!-- Slide 9: Data Coverage -->
+<div class="slide">
+    <h2>Data Coverage</h2>
+    <h3>Species Tracked</h3>
+    <ul>
+        <li>Chinook Salmon (King)</li>
+        <li>Sockeye Salmon (Red)</li>
+        <li>Coho Salmon (Silver)</li>
+        <li>Pink Salmon (Humpy)</li>
+        <li>Chum Salmon (Dog)</li>
+    </ul>
+    <h3>Geographic Coverage</h3>
+    <ul>
+        <li>7+ Major Alaska Hatcheries</li>
+        <li>Coastal tide stations statewide</li>
+        <li>Comprehensive ADF&amp;G data integration</li>
+    </ul>
+</div>
+
+<!-- Slide 10: Competitive Advantages -->
+<div class="slide white">
+    <h2>Why SeaScope Stands Out</h2>
+    <div class="feature-box">
+        <h3>1. Alaska-Specific Focus</h3>
+        <p>Built specifically for Alaska's unique marine ecosystem with local data sources and partnerships</p>
+    </div>
+    <div class="feature-box">
+        <h3>2. User-Centric Design</h3>
+        <p>Intuitive interface requiring minimal training, mobile-responsive for field use</p>
+    </div>
+    <div class="feature-box">
+        <h3>3. Comprehensive Integration</h3>
+        <p>Single platform for all fishery data needs - no multiple tools required</p>
+    </div>
+</div>
+
+<!-- Slide 11: Success Metrics -->
+<div class="slide">
+    <h2>Measurable Impact</h2>
+    <h3>Operational Efficiency</h3>
+    <ul>
+        <li>30% reduction in route planning time</li>
+        <li>25% fuel cost savings through optimization</li>
+        <li>40% faster data access vs traditional methods</li>
+    </ul>
+    <h3>Platform Performance</h3>
+    <ul>
+        <li>99.9% uptime guarantee</li>
+        <li>&lt;2 second page load times</li>
+        <li>24/7 availability</li>
+        <li>Mobile and desktop access</li>
+    </ul>
+</div>
+
+<!-- Slide 12: Roadmap -->
+<div class="slide white">
+    <h2>Future Development</h2>
+    <h3>Q2 2026</h3>
+    <ul>
+        <li>Native mobile applications (iOS &amp; Android)</li>
+        <li>Advanced AI-powered predictions</li>
+        <li>Weather integration</li>
+    </ul>
+    <h3>Q3 2026</h3>
+    <ul>
+        <li>Community features and forums</li>
+        <li>Collaborative mapping tools</li>
+        <li>Enhanced export capabilities</li>
+    </ul>
+    <h3>Q4 2026</h3>
+    <ul>
+        <li>Machine learning trend analysis</li>
+        <li>Automated alerts and notifications</li>
+        <li>Custom dashboard builder</li>
+    </ul>
+</div>
+
+<!-- Slide 13: Environmental Commitment -->
+<div class="slide">
+    <h2>Environmental Commitment</h2>
+    <p class="tagline">Sustainable Fisheries Through Data</p>
+    <p>SeaScope supports Alaska's commitment to sustainable fishing practices:</p>
+    <ul>
+        <li><strong>Transparency</strong> - Public access to fishery data</li>
+        <li><strong>Conservation</strong> - Track and protect at-risk populations</li>
+        <li><strong>Education</strong> - Inform public about marine ecosystems</li>
+        <li><strong>Stewardship</strong> - Support responsible fishing practices</li>
+        <li><strong>Long-Term Planning</strong> - Multi-generational sustainability</li>
+    </ul>
+</div>
+
+<!-- Slide 14: Testimonials -->
+<div class="slide white">
+    <h2>What Users Say</h2>
+    <div class="feature-box">
+        <p><em>"SeaScope revolutionized how we analyze fishery data. The integrated mapping and tide information saves us hours every week."</em></p>
+        <p><strong>- Marine Biologist, University of Alaska</strong></p>
+    </div>
+    <div class="feature-box">
+        <p><em>"The tide predictions and release data help me plan my 
+routes perfectly. I've increased my efficiency by 30% since using 
+SeaScope."</em></p>
+        <p><strong>- Commercial Fisherman, Sitka</strong></p>
+    </div>
+    <div class="feature-box">
+        <p><em>"As a fishery manager, having all this data in one place is invaluable."</em></p>
+        <p><strong>- ADF&amp;G Official</strong></p>
+    </div>
+</div>
+
+<!-- Slide 15: Contact -->
+<div class="slide">
+    <h2>Let's Connect</h2>
+    <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><strong>Website:</strong> www.getseascope.com</p>
+        <p><strong>Email:</strong> info@pyroncompany.com</p>
+        <p><strong>Support:</strong> support@getseascope.com</p>
+        <h3>Social Media</h3>
+        <p>Twitter: @getseascope</p>
+        <p>LinkedIn: /company/getseascope</p>
+        <p>Instagram: @getseascope</p>
+    </div>
+    <h3>Schedule a Demo Today</h3>
+    <p>Contact us to see SeaScope in action and explore partnership opportunities</p>
+</div>
+
+<!-- Slide 16: Thank You -->
+<div class="slide white">
+    <h1 style="text-align: center; margin-top: 100px;">Thank You</h1>
+    <p class="tagline" style="text-align: center;">Transform Your Fishery Operations with SeaScope</p>
+    <p style="text-align: center; font-size: 1.5em; margin-top: 2em;">Alaska's Premier Fishery Intelligence Platform</p>
+    <p style="text-align: center; font-size: 1.3em; margin-top: 2em;">Visit <strong>www.getseascope.com</strong> to get started today</p>
+    <div class="footer">
+        <p><strong>© 2026 SeaScope. All rights reserved.</strong></p>
+        <p>Official Product of Pyron Company</p>
+    </div>
+</div>
+
+
+
+</body></html>

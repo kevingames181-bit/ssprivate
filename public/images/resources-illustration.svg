@@ -1,0 +1,42 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Resources/Books Illustration -->
+  <defs>
+    <linearGradient id="bookGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0080ff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#00d4aa;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Book Stack -->
+  <rect x="100" y="180" width="80" height="100" fill="url(#bookGradient)" rx="5"/>
+  <rect x="110" y="170" width="80" height="100" fill="#ff6b35" opacity="0.8" rx="5"/>
+  <rect x="120" y="160" width="80" height="100" fill="#0a2540" opacity="0.9" rx="5"/>
+  
+  <!-- Open Book -->
+  <path d="M220 200 L220 260 L280 250 L280 190 Z" fill="#ffffff" opacity="0.9"/>
+  <path d="M280 200 L280 260 L340 250 L340 190 Z" fill="#f5f5f5" opacity="0.9"/>
+  <line x1="280" y1="200" x2="280" y2="260" stroke="#0a2540" stroke-width="2"/>
+  
+  <!-- Lines on open book -->
+  <line x1="230" y1="210" x2="270" y2="208" stroke="#0a2540" stroke-width="1" opacity="0.3"/>
+  <line x1="230" y1="220" x2="270" y2="218" stroke="#0a2540" stroke-width="1" opacity="0.3"/>
+  <line x1="230" y1="230" x2="270" y2="228" stroke="#0a2540" stroke-width="1" opacity="0.3"/>
+  
+  <line x1="290" y1="210" x2="330" y2="208" stroke="#0a2540" stroke-width="1" opacity="0.3"/>
+  <line x1="290" y1="220" x2="330" y2="218" stroke="#0a2540" stroke-width="1" opacity="0.3"/>
+  <line x1="290" y1="230" x2="330" y2="228" stroke="#0a2540" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Lightbulb (idea) -->
+  <circle cx="200" cy="100" r="25" fill="#ff3b30" opacity="0.2"/>
+  <circle cx="200" cy="100" r="20" fill="#ff3b30" opacity="0.4"/>
+  <circle cx="200" cy="100" r="15" fill="#ff3b30"/>
+  <rect x="195" y="120" width="10" height="15" fill="#ff3b30" opacity="0.6" rx="2"/>
+  
+  <!-- Sparkles -->
+  <circle cx="180" cy="80" r="2" fill="#00d4aa">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="220" cy="85" r="2" fill="#00d4aa">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.7s" repeatCount="indefinite"/>
+  </circle>
+</svg>
